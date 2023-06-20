@@ -29,6 +29,7 @@ namespace MarchPractice.PageObject
         public ResultPage NavigateToResultPage()
         {
             Searchtextbox.SendKeys("Interview Point");
+            Thread.Sleep(2000);
             SearchButton.Click();
             return new ResultPage(driver);
         }

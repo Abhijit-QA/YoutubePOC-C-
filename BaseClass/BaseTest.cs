@@ -15,6 +15,7 @@ namespace MarchPractice.BaseClass
         [SetUp]
         public void Open()
         {
+           // new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Url = "https://www.youtube.com/";

@@ -24,7 +24,8 @@ namespace MarchPractice.TestScripts
             String expectedChannelName = "Interview Point";
             Assert.IsTrue(actualChannelName.Equals(expectedChannelName));
             Thread.Sleep(3000);
-
+            var videopage= new VideoPage(driver);
+            videopage.getVideo();
 
 
            // Thread.Sleep(5000);
