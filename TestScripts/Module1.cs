@@ -21,7 +21,7 @@ namespace MarchPractice.TestScripts
             //var channelname = resultpage.NavigateTochannel();
           var channelname =  resultpage.NavigateToChannel();
             String actualChannelName = channelname.getChannelName();
-            String expectedChannelName = "Interview Point";
+            String expectedChannelName = "CitiusTech";
             Assert.IsTrue(actualChannelName.Equals(expectedChannelName));
             Thread.Sleep(3000);
             var videopage= new VideoPage(driver);

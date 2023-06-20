@@ -18,7 +18,7 @@ namespace MarchPractice.PageObject
 
         }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-browse[2]/div[3]/ytd-c4-tabbed-header-renderer/tp-yt-app-header-layout/div/tp-yt-app-header/div[2]/tp-yt-app-toolbar/div/div/tp-yt-paper-tabs/div/div/tp-yt-paper-tab[2]/div")]
+        [FindsBy(How = How.XPath, Using = "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-browse[2]/div[3]/ytd-c4-tabbed-header-renderer/tp-yt-app-header-layout/div/tp-yt-app-header/div[2]/tp-yt-app-toolbar/div/div/tp-yt-paper-tabs/div/div/tp-yt-paper-tab[2]/div/div[1]")]
         public IWebElement VideoTab { get; set; }
 
          [FindsBy(How = How.XPath, Using = "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-browse[2]/ytd-two-column-browse-results-renderer/div[1]/ytd-rich-grid-renderer/div[6]/ytd-rich-grid-row[1]/div/ytd-rich-item-renderer[1]/div/ytd-rich-grid-media/div[1]/div[2]/div[1]/h3/a/yt-formatted-string")]
@@ -27,7 +27,7 @@ namespace MarchPractice.PageObject
         // public void NavigateTochannel()  
         public void getVideo()
         {
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
             VideoTab.Click();
             Thread.Sleep(3000);
             LatestVideo.Click();

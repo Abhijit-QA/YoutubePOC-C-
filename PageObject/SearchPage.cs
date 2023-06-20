@@ -28,7 +28,7 @@ namespace MarchPractice.PageObject
 
         public ResultPage NavigateToResultPage()
         {
-            Searchtextbox.SendKeys("Interview Point");
+            Searchtextbox.SendKeys("CitiusTech");
             Thread.Sleep(2000);
             SearchButton.Click();
             return new ResultPage(driver);

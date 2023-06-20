@@ -18,7 +18,7 @@ namespace MarchPractice.PageObject
 
         }
 
-        [FindsBy(How = How.LinkText, Using = "Interview Point")]
+        [FindsBy(How = How.LinkText, Using = "CitiusTech")]
         public IWebElement ChannelNameLinkText { get; set; }
 
         // public void NavigateTochannel()  
