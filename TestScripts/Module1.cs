@@ -23,7 +23,7 @@ namespace MarchPractice.TestScripts
             String actualChannelName = channelname.getChannelName();
             String expectedChannelName = "CitiusTech";
             Assert.IsTrue(actualChannelName.Equals(expectedChannelName));
-            Thread.Sleep(3000);
+             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             var videopage= new VideoPage(driver);
             videopage.getVideo();
 

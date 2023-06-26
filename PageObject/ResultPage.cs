@@ -24,7 +24,7 @@ namespace MarchPractice.PageObject
         // public void NavigateTochannel()  
         public ChannelPage NavigateToChannel()
         {
-            Thread.Sleep(3000);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             ChannelNameLinkText.Click();
             return new ChannelPage(driver);
         }

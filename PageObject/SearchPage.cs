@@ -29,7 +29,7 @@ namespace MarchPractice.PageObject
         public ResultPage NavigateToResultPage()
         {
             Searchtextbox.SendKeys("CitiusTech");
-            Thread.Sleep(2000);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             SearchButton.Click();
             return new ResultPage(driver);
         }

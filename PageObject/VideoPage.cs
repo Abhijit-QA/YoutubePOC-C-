@@ -29,10 +29,10 @@ namespace MarchPractice.PageObject
         {
             //Thread.Sleep(3000);
             VideoTab.Click();
-            Thread.Sleep(3000);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             LatestVideo.Click();
             Thread.Sleep(10000);
-           // return new ChannelPage(driver);
+           
         }
     }
 }

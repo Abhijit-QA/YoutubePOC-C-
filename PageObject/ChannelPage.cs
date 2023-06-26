@@ -23,7 +23,7 @@ namespace MarchPractice.PageObject
         public IWebElement ChannelName { get; set; }
         public string getChannelName()
         {
-            Thread.Sleep(4000);
+             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             return ChannelName.Text;
         }
     }
