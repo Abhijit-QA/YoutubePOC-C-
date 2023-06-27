@@ -17,8 +17,7 @@ namespace MarchPractice.TestScripts
         {
           var searchpage =  new SearchPage(driver);
            var resultpage = searchpage.NavigateToResultPage();
-            //resultpage.NavigateTochannel();     
-            //var channelname = resultpage.NavigateTochannel();
+        
           var channelname =  resultpage.NavigateToChannel();
             String actualChannelName = channelname.getChannelName();
             String expectedChannelName = "CitiusTech";

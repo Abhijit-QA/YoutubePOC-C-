@@ -18,7 +18,7 @@ namespace MarchPractice.PageObject
 
         }
 
-        [FindsBy(How = How.XPath, Using = "/html/body/ytd-app/div[1]/ytd-page-manager/ytd-browse[2]/div[3]/ytd-c4-tabbed-header-renderer/tp-yt-app-header-layout/div/tp-yt-app-header/div[2]/div[3]/div/div[1]/div/div[1]/ytd-channel-name/div/div/yt-formatted-string")]
+        [FindsBy(How = How.XPath, Using = "//*[text()='CitiusTech']")]
         
         public IWebElement ChannelName { get; set; }
         public string getChannelName()
