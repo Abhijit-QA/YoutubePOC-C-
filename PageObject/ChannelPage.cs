@@ -18,7 +18,7 @@ namespace MarchPractice.PageObject
 
         }
 
-        [FindsBy(How = How.XPath, Using = "//*[text()='CitiusTech']")]
+        [FindsBy(How = How.XPath, Using = "//yt-formatted-string[text()='CitiusTech']")]
         
         public IWebElement ChannelName { get; set; }
         public string getChannelName()
